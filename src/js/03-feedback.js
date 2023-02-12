@@ -6,7 +6,7 @@ const formInputName = document.querySelector('input');
 const formTextareaMessage = document.querySelector('textarea');
 
 const STORAGE_KEY = 'feedback-form-state';
-const formObject = {};
+const formObject = { email: '', message: '' };
 
 formEl.addEventListener('submit', onFormSubmit);
 formEl.addEventListener('input', throttle(onFeedbackInput, 500));
